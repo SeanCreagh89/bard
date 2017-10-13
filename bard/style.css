@@ -1,0 +1,162 @@
+/*
+	Theme Name: Bard
+	Site Ownership: Mullins Family
+	Author: Aspire Digital
+	Developer: Sean Creagh
+	Version: 3.0
+
+	Color:
+		- dark green: #0aad80;
+		- dark gray: #1b1d1f;
+		- dark pastel brown: #544335;
+		- light gray: #e3e3e3;
+		- light gray: #f6f6f6;
+		- light green: #74b609;
+		- white: #ffffff;
+
+	Fonts:
+		- Default: font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 85%;
+		- Titles, Headings: font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; font-size: 120%;
+		- Subtitle: font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; font-size: 100%;
+		- Menu Items: font-family: 'Roboto Condensed', sans-serif; font-size: 100%;
+*/
+
+
+
+html, body, header, footer, div, nav, ul, li, a, h1, h2, h3, h4, h5, strong, p, span, img, iframe, label, input, textarea {
+	margin: 0;
+	border: 0;
+	outline: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+body { font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 95%; }
+#title, h1, h2, h3, h4, h5, strong { font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; font-size: 120%; }
+#subtitle { font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; font-size: 100%; }
+.menu-item { font-family: 'Roboto Condensed', sans-serif; font-size: 100%; }
+input, textarea { font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 100%; }
+
+
+
+/*---Header Styles---*/
+header { color: #ffffff; background-color: #1b1d1f; width: 100%; }
+#header_inner_container { width: 90%; padding: 10px 5%; position: relative; }
+#header_inner_container div { vertical-align: top; }
+#site_logo_container, #site_title_container, #site_navigation_container, #site_navigation_container li { display: inline-block; }
+#site_logo_container { width: 100px; height: 100px; margin: 0 20px 0 0; }
+#site_logo_container img { width: 100%; height: 100%; display: block; }
+#site_title_container { margin: 20.5px 0; }
+#site_title_container div { text-align: center; margin: 5px 0; display: block; }
+#title { font-weight: bold; }
+#subtitle { font-style: italic; }
+#site_navigation_container { margin: 39.5px 0; position: absolute; right: 5%; }
+#site_navigation_container li { margin: 0 10px; }
+#site_navigation_container li:first-of-type { margin: 0 10px 0 0; }
+#site_navigation_container li:last-of-type { margin: 0 0 0 10px; }
+#site_navigation_container a { color: #ffffff; }
+#site_navigation_container a:hover { color: #0aad80; }
+#site_responsive_navigation { width: 30px; margin: 27.5px 0; display: none; position: absolute; right: 5%; }
+#site_responsive_navigation img { width: 100%; height: 100%; display: block; cursor: pointer; }
+#site_responsive_dropdown { background-color: #ffffff; text-align: center; outline: 2px solid #e3e3e3; padding: 5px; display: none; position: absolute; top: 35px; right: 0; z-index: 101; }
+#site_responsive_dropdown li { width: 200px; border-bottom: 1px solid #e3e3e3; }
+#site_responsive_dropdown li:last-of-type { border: 0; }
+#site_responsive_dropdown a { color: #1b1d1f; width: 100%; padding: 10px 0; display: block; }
+#site_responsive_dropdown a:hover { color: #0aad80; background-color: #f6f6f6; }
+
+@media screen and (max-width: 890px) {
+	#site_logo_container { width: 80px; height: 80px; margin: 0 10px 0 0; }
+	#site_title_container { margin: 15.5px 0px; }
+	#title { font-size: 100%; }
+	#subtitle { font-size: 80%; }
+	#site_navigation_container { display: none; }
+	#site_responsive_navigation { display: inline-block; }
+}
+
+
+
+/*---Content Styles---*/
+#content { color: #1b1d1f; background-color: #ffffff; width: 100%; }
+#page_banner_container { width: 100%; }
+#page_banner_container img { width: 100%; height: 100%; display: block; }
+#page_title_container { color: #666666; background-color: #f6f6f6; font-size: 80%; width: 90%; border-top: 2px solid #e3e3e3; border-radius: 2px solid: #e3e3e3; padding: 3px 5%; }
+#content_inner_container { width: 90%; padding: 5%; }
+h1:after, h2:after, h3:after, h4:after, h5:after, strong:after { content: ''; margin: 6px 0 15px 0; width: 35px; height: 0; display: block; position: relative; border-bottom: 3px solid #1b1d1f; }
+.content_elements p { margin: 20px 0; }
+.content_elements p:first-of-type { margin: 0 0 20px 0; }
+.content_elements p:last-of-type { margin: 20px 0 0 0; }
+.content_elements a { color: #74b609; }
+.content_elements form { width: 70%; margin: 0 auto; padding: 20px 0 0 0; display: block; }
+.content_elements input[type="text"], .content_elements input[type="email"], .content_elements textarea { width: 97%; border-bottom: 2px solid #e3e3e3;  margin: 10px 0; padding: 1.5%; }
+.content_elements input[type="text"]:focus, .content_elements input[type="email"]:focus, .content_elements textarea:focus { background-color: #f6f6f6; }
+.content_elements textarea { min-width: 97%; max-width: 97%; min-height: 180px; }
+.content_elements input[type="submit"] { color: #ffffff; background-color: #74b609; width: 60%; margin: 0 auto; padding: 15px 2.5%; display: block; cursor: pointer; }
+
+/*---Headings Fix---*/
+.title_wrapper { margin: 0 auto; display: block; }
+
+/*---Poem of the Month CSS---*/
+#poem_of_the_month_layout { width: 100%; position: relative; vertical-align: top; }
+#page_content_container, #poem_of_the_month_container { padding: 5%; display:inline-block; vertical-align: top; }
+#page_content_container { width: 56.66666666666666%; }
+#poem_of_the_month_container { color: #ffffff; background-color: #666666; text-align: center; width: 23.33333333333333%; position: absolute; top: 0; bottom: 0; }
+
+/*---Posts CSS---*/
+#blog_wrapper { width: 100%; position: relative; vertical-align: top; }
+#post_section, #sidebar_section { padding: 5%; display:inline-block; vertical-align: top; }
+#post_section { text-align: center; width: 56.66666666666666%; }
+.post_wrapper, .post_wrapper p { margin: 20px 0; }
+.post_wrapper strong a { color: #666666; }
+.post_wrapper strong a:hover { color: #74b609; }
+.post_wrapper:first-of-type, .post_wrapper p:first-of-type { margin: 0 0 20px 0; }
+.post_wrapper:last-of-type, .post_wrapper p:last-of-type { margin: 20px 0 0 0; }
+.post_wrapper:only-of-type { margin: 0; }
+.category_wrapper { margin: 0 0 10px 0; }
+.category_wrapper span { font-size: 90%; }
+.category_wrapper a { color: #74b609; }
+.pagination_wrapper a { color: #666666; font-size: 90%; margin: 0 5px; }
+.pagination_wrapper span { color: #666666; font-size: 90%; margin: 0 5px; }
+.pagination_wrapper a:hover { color: #74b609; }
+#sidebar_section { color: #ffffff; background-color: #666666; width: 23.33333333333333%; position: absolute; top: 0; bottom: 0; }
+.sidebar_blocks { width: 100%; margin: 5% 0; }
+.sidebar_blocks ul li { border-bottom: 1px solid #515151; }
+.sidebar_blocks ul li a { color: #74b609; text-align: center; width: 100%; padding: 10px 0; display: block; }
+.sidebar_blocks ul li a:hover { color: #ffffff; background-color: #757575; }
+.posts_in_category { color: #74b609; font-size: 100%; }
+.posts_in_category:hover { color: #ffffff; }
+
+@media screen and (max-width: 890px) {
+	#page_content_container, #poem_of_the_month_container, #post_section, #sidebar_section { width: 90%; display: block; position: relative; }
+}
+
+/*---Image CSS---*/
+.alignleft { margin-right: 15px; float: left; }
+.alignright { margin-left: 15px; float: right; }
+.aligncenter { margin: 0 auto; display: block; }
+.wp-caption { background-color: #f6f6f6; padding: 10px; }
+.wp-caption img { width: 100%; height: 100%; display: block; }
+.wp-caption-text { font-size: 80%; margin-top: 10px !important; }
+
+/*---Video CSS---*/
+.video_wrapper { width: 100%; display: inline-block; vertical-align: top; }
+.video_wrapper p { width: 100%; }
+.video_wrapper p > iframe { width: 45%; margin: 0 2.5%; }
+
+
+/*---Footer Styles---*/
+footer {
+	color: #ffffff;
+	background-color: #544335;
+	width: 100%; 
+}
+
+#footer_inner_container {
+	text-align: center;
+	width: 90%;
+	padding: 80px 5%;
+}
+
+#footer_inner_container div { margin: 5px 0; }
+#footer_inner_container a { color: #ffffff; }
+#footer_inner_container a:hover { color: #0aad80; }
